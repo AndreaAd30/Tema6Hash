@@ -15,7 +15,7 @@ public class Principal extends JFrame implements ActionListener {
     private JTextField campoNumeroControl;
     private JTextField campoPromedio;
     private JTextField campoNombre;
-    //private JTextField campoDireccion;
+    
     private JButton btnEliminar;
     private JButton btnBuscar;
     private JButton btnRegistrar;
@@ -67,14 +67,7 @@ public class Principal extends JFrame implements ActionListener {
         lblNombre.setBounds(10, 74, 86, 14);
         getContentPane().add(lblNombre);
         
-        //JLabel lblDireccion=new JLabel("Direccion");
-        //lblDireccion.setBounds(10, 105, 86, 14);
-        //getContentPane().add(lblDireccion);
         
-        //campoDireccion=new JTextField();
-        //campoDireccion.setColumns(10);
-        //campoDireccion.setBounds(85,102,233,20);
-        //getContentPane().add(campoDireccion);
         
         btnEliminar = new JButton("Eliminar");
         btnEliminar.setBounds(219,145,99,23);
@@ -123,7 +116,7 @@ public class Principal extends JFrame implements ActionListener {
         miPersona.setnControl(campoNumeroControl.getText());
         miPersona.setNombre(campoNombre.getText());
         miPersona.setPromedio(Integer.parseInt(campoPromedio.getText()));
-        //miPersona.setDireccion(campoDireccion.getText());
+       
         
         if(tablaPersonas.containsKey(miPersona.getnControl())==false){
             tablaPersonas.put(miPersona.getnControl(),miPersona);
@@ -160,7 +153,7 @@ public class Principal extends JFrame implements ActionListener {
     }
 
     private void limpiarCampos() {
-        //campoDireccion.setText("");
+        
         campoNumeroControl.setText("");
         campoNombre.setText("");
         campoPromedio.setText("");
