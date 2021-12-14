@@ -19,7 +19,6 @@ public class Consulta extends JDialog{
         setLocationRelativeTo(null);
         
         mostrarListaPersonas(tablaPersonas);
-        
     }
     
     public void initialize(){
